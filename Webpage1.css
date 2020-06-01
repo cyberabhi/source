@@ -1,0 +1,9 @@
+p{
+	padding: 5pt;
+	border:1px solid grey;
+	font-size: 16pt;
+	background-color: #047fd6;
+}
+body{
+	background: url('one.jpg') no-repeat top left;
+}
