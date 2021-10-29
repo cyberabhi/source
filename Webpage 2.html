@@ -2,6 +2,95 @@
 <html>
 <head>
 	<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: Helvetica Neue, Arial;
+    font-size: 18px;
+}
+
+h1, h2 {
+    color: rgb(19, 19, 19);
+    
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.main-text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.author-text {
+    font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.container {
+    width: 1140px;
+    margin: 20px auto 0 auto;
+}
+
+.blog-post {
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+    position: relative;
+}
+
+.other-posts {
+    width: 25%;
+    float: left;
+}
+
+.author-box {
+    padding-top: 20px;
+    border-top: 1px solid #808080;
+}
+
+.other {
+    margin-bottom: 40px;
+}
+
+.author-box img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto;
+}
+
+.date {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -34,18 +123,59 @@ li a:hover {
 <script type="text/javascript">function change(){
 	alert('Hello! How are you?')
 }</script>
-	<title> Webpage2  </title>
+	<title> Abhi's Profile  </title>
 </head>
 <body bgcolor="#9e2118">
 	<div id="d1" >
 		<ul>
   <li><a href="#home">Home</a></li>
-  <li><a href="#Feeds">Feed</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="https://in.linkedin.com/in/abhinav-umrao-8b523a157" target="_blank">Linkedin</a></li>
+  <li><a href="https://github.com/cyberabhi" target="_blank">Github</a></li>
+  <li><a href="https://www.quora.com/profile/Abhinav-Umrao" target="_blank">Quora</a></li>
   <li id="l1"><button onclick="document.location = 'Webpage 1.html'">Webpage1</button></li>
   <li id="l1"><button onclick="change()">Click Me</button></li>
 </ul>
 </div>	
+
+  <div class="container">
+            <div class="blog-post">
+                <h1>ABHINAV UMRAO</h1>
+                <p class="date">BIT,Bangalore</p>
+                <h2><br><br>About:</h2>
+                <p class="main-text">
+                  Experienced Technical Vice President with a demonstrated history of working in the information technology and services industry. Skilled in Public Speaking, Management, Teamwork, and Leadership. Strong engineering professional with a Bachelor of Engineering focused in Electrical, Electronics and Communications Engineering from Bangalore Institute of Technology.
+                </p>
+
+                <br>
+
+                <h2>Amazing Projects</h2>
+                <p class="main-text">
+                  Sentiment Classifier:<br>
+                  In this mini project a random generated Twitter threads is classified into Positive Tweet and Negative Tweet and calculated the Net Sentiment of the tweet (positive or negative).
+                  This can be applied on real data also.<br><br>
+
+                  Table top and Obstacle Avoider Bot:<br>
+                  An Arduino Uno integrated with IR sensors to detect the obstacles and move away from them( Obstacle Avoider), to detect table and never fall from it ( Table Top )<br><br>
+
+                  Bluetooth Bot:<br>
+                  An Arduino Uno both integrated with HC-05 Bluetooth module, which can be controlled by Smartphone.<br><br>
+
+                  UV sensor Radar:<br>
+                  An Arduino Uno integrated with UV sensors mounted on servo motor to continuously survey the particular range of area and visually show on the screen, if any object is detected.<br>
+                </p>
+                <img src="wall.jfif" alt="The HTML5 logo">
+                
+            </div>
+            
+           
+            
+            <div class="clearfix"></div>
+            
+            <div class="author-box">
+                <img src="profile.jfif" alt="Author photo">
+                <p class="author-text"> Abinav Umrao<br>(C.W.B.🙂)</p>
+            </div>
+            
+        </div>
 </body>
 </html>
